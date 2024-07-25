@@ -191,6 +191,14 @@ body {
   animation-delay: calc(30s / 7 * (7 - 7) * -1);
 }
 
+.footer-ul > li {
+  transition: all 0.2s ease-in-out;
+}
+
+.footer-ul > li:hover:not(:first-child) {
+  color: rgba(255, 255, 255, 0.612);
+}
+
 .animated-button {
   position: relative;
   display: flex;
@@ -360,6 +368,6 @@ body {
 .footer-icon-wrapper .instagram:hover,
 .footer-icon-wrapper .instagram:hover .tooltip,
 .footer-icon-wrapper .instagram:hover .tooltip::before {
-  background: #e4405f;
+  background: #fd1d1d;
   color: #fff;
 }

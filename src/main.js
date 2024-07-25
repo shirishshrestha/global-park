@@ -21,12 +21,12 @@ document.addEventListener("DOMContentLoaded", function () {
     tl.from(".header-figure", {
       y: -100,
       delay: 0.5,
-      duration: 0.6,
+      duration: 0.5,
       opacity: 0,
       ease: "power4.out",
     });
     tl.from(".header-menu a", {
-      duration: 1,
+      duration: 0.6,
       opacity: 0,
       ease: "sine.out",
       stagger: 0.2,
@@ -62,7 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: ".why-image",
       start: "top 50%",
       end: "bottom bottom",
-      toggleActions: "play none none reverse",
     },
   });
 
@@ -76,7 +75,6 @@ document.addEventListener("DOMContentLoaded", function () {
       trigger: ".scrubRightEffect",
       start: "top 50%",
       end: "bottom bottom",
-      toggleActions: "play none none reverse",
     },
   });
 
@@ -91,7 +89,6 @@ document.addEventListener("DOMContentLoaded", function () {
         trigger: heading,
         start: "top 80%",
         end: "bottom 20%",
-        toggleActions: "play none none reverse",
       },
     });
   });
@@ -117,18 +114,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   );
 
-  gsap.from(".goal-description, .goal-image", {
-    opacity: 0,
-    y: 50,
-    duration: 1,
-    stagger: 0.5,
-    scrollTrigger: {
-      trigger: ".goal-years",
-      start: "top 70%",
-      end: "bottom 20%",
-      toggleActions: "play none none reverse",
-    },
-  });
+  // gsap.from(".goal-description, .goal-image", {
+  //   opacity: 0,
+  //   y: 50,
+  //   duration: 1,
+  //   stagger: 0.5,
+  //   scrollTrigger: {
+  //     trigger: ".goal-years",
+  //     start: "top 70%",
+  //     end: "bottom 20%",
+  //   },
+  // });
 
   gsap.from(".p-services", {
     opacity: 0,
@@ -137,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".p-services",
       start: "top 60%",
-      toggleActions: "play none none reverse",
+    
     },
   });
   gsap.from(".student-feedback", {
@@ -148,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".student-feedback",
       start: "top 60%",
-      toggleActions: "play none none reverse",
     },
   });
   gsap.from(".mySwiper", {
@@ -158,7 +153,6 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".mySwiper",
       start: "top 60%",
-      toggleActions: "play none none reverse",
     },
   });
 
@@ -171,7 +165,6 @@ document.addEventListener("DOMContentLoaded", function () {
     scrollTrigger: {
       trigger: ".mentor-cards",
       start: "top 80%",
-      toggleActions: "play none none reverse",
     },
   });
 });
