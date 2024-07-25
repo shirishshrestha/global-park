@@ -374,6 +374,6 @@ body {
 .footer-icon-wrapper .instagram:hover,
 .footer-icon-wrapper .instagram:hover .tooltip,
 .footer-icon-wrapper .instagram:hover .tooltip::before {
-  background: #fd1d1d;
+  background: #f44545;
   color: #fff;
 }
