@@ -53,6 +53,12 @@ body {
   font-weight: 800;
 }
 
+.page-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+
 .button {
   @apply border-[2px] border-primary flex items-center text-primary gap-2 rounded-full w-fit px-4 py-2 font-semibold relative overflow-hidden transition-all duration-200 ease-in-out;
 }
