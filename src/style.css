@@ -53,6 +53,11 @@ body {
     padding: 0 30px;
   }
 }
+@media (width<640px) {
+  .main_container {
+    padding: 0 15px;
+  }
+}
 
 ::-webkit-scrollbar {
   width: 8px;

@@ -64,11 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggle = document.querySelector(".toggleMenu");
     const toggleNav = document.querySelector(".toggle-nav");
     const wholeContainer = document.querySelector(".whole-container");
-    const menuItems = document.querySelectorAll(".toggle-nav > ul > li");
+    const menuItems = document.querySelectorAll(".toggle-nav > ul > li > a");
     toggle.addEventListener("change", () => {
       toggleNav.classList.toggle("hidden");
       document.body.classList.toggle("overflow-hidden");
       wholeContainer.classList.toggle("hidden");
+      const time = gsap.timeline();
+
+      time.from(toggleNav, {
+        duration: 1,
+        x: 20,
+        ease: "power4.out",
+      });
     });
 
     menuItems.forEach((item) => {
