@@ -59,4 +59,33 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     });
   });
+
+  const toggleMenu = () => {
+    const toggle = document.querySelector(".toggleMenu");
+    const toggleNav = document.querySelector(".toggle-nav");
+    const wholeContainer = document.querySelector(".whole-container");
+    const menuItems = document.querySelectorAll(".toggle-nav > ul > li");
+    toggle.addEventListener("change", () => {
+      toggleNav.classList.toggle("hidden");
+      document.body.classList.toggle("overflow-hidden");
+      wholeContainer.classList.toggle("hidden");
+    });
+
+    menuItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        toggleNav.classList.toggle("hidden");
+        wholeContainer.classList.toggle("hidden");
+        document.body.classList.toggle("overflow-hidden");
+        toggle.checked = false;
+      });
+    });
+
+    wholeContainer.addEventListener("click", () => {
+      toggleNav.classList.toggle("hidden");
+      wholeContainer.classList.toggle("hidden");
+      document.body.classList.toggle("overflow-hidden");
+      toggle.checked = false;
+    });
+  };
+  toggleMenu();
 });

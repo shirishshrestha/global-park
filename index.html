@@ -20,7 +20,6 @@
   </head>
   <body>
     <!-- header section  -->
-
     <header class="header w-full h-fit fixed inset-0 z-30">
       <div class="main_container !py-[1rem]">
         <div
@@ -35,13 +34,13 @@
               />
             </a>
           </figure>
-          <nav>
+          <nav class="lg:block hidden">
             <ul class="flex gap-[2rem] font-semibold">
               <li class="header-menu font-bold text-primary">
                 <a href="/">Home</a>
               </li>
               <li class="header-menu text-hover">
-                <a href="about.html">About Us</a>
+                <a href="/about.html">About Us</a>
               </li>
               <li class="header-menu text-hover">
                 <a href="/destination.html">Top Destinations</a>
@@ -55,7 +54,7 @@
               </li>
             </ul>
           </nav>
-          <div class="header-number font-semibold">
+          <div class="header-number font-semibold lg:block hidden">
             <a
               href="tel:+977-9851244979"
               class="flex items-center gap-[0.3rem]"
@@ -77,6 +76,38 @@
               +977-9851244979
             </a>
           </div>
+          <div class="whole-container fixed inset-0 w-full h-full hidden"></div>
+          <nav class="toggle-nav hidden relative z-10">
+            <ul
+              class="flex text-[1.4rem] w-[290px] flex-col flex-shrink-0 gap-[1rem] font-semibold absolute bg-accent/40 backdrop-blur-lg p-[3rem] text-[#000] top-[3rem]"
+            >
+              <li class="">
+                <a href="/">Home</a>
+              </li>
+              <li class="">
+                <a href="/about.html">About Us</a>
+              </li>
+              <li class="">
+                <a href="/destination.html">Top Destinations</a>
+              </li>
+              <li class="">
+                <a href="/services.html">Services</a>
+              </li>
+              <li class="">
+                <a href="/contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header-number lg:hidden block">
+            <label class="menu-container">
+              <input type="checkbox" class="toggleMenu" />
+              <div class="menu-checkmark">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </label>
+          </div>
         </div>
       </div>
     </header>
@@ -84,21 +115,25 @@
     <main>
       <!-- hero section  -->
       <section>
-        <div class="hero main_container w-full h-[100vh] flex justify-evenly">
+        <div
+          class="hero main_container w-full xl:h-[100vh] xl:flex xl:justify-evenly"
+        >
           <div
-            class="hero-content pt-[6rem] text-start flex flex-col h-full justify-center relative"
+            class="hero-content xl:pt-[6rem] pt-[20%] xl:text-start xl:items-start xl:h-full xl:pb-0 pb-[2rem] items-center text-center flex flex-col justify-center relative"
           >
-            <img
-              src="/images/curly-arrow.svg"
-              alt="curly"
-              class="h-[120px] absolute right-[7rem] top-[15rem]"
-            />
-            <h1
-              class="hero-heading text-[60px] leading-[80px] font-bold text-white max-w-[600px]"
-            >
-              Empower Your Future with
-              <span class="text-primary">Expert Guidance</span>
-            </h1>
+            <div class="relative">
+              <img
+                src="/images/curly-arrow.svg"
+                alt="curly"
+                class="h-[120px] absolute xl:right-[16%] xl:top-[18%] top-[20%] right-[0%]"
+              />
+              <h1
+                class="hero-heading text-[60px] leading-[80px] font-bold text-white max-w-[600px]"
+              >
+                Empower Your Future with
+                <span class="text-primary">Expert Guidance</span>
+              </h1>
+            </div>
             <p class="text-[18px] leading-[3rem] font-semibold pl-[0.3rem]">
               Your Gateway to Global Education
             </p>
@@ -122,18 +157,19 @@
               </button>
             </a>
           </div>
-          <figure class="flex items-end relative overflow-hidden">
+          <figure
+            class="flex xl:flex-row xl:items-end flex-col justify-center xl:justify-normal items-center relative overflow-hidden"
+          >
             <img
               src="/images/circle.svg"
               alt="circle"
-              class="hero-circle absolute top-[15rem]"
+              class="hero-circle absolute xl:top-[40%] xl:left-0 top-[30%] left-[20%]"
             />
             <img
               src="/images/blue-circle.svg"
               alt="circle"
-              class="hero-circle absolute top-[24rem] object-cover h-[7rem] right-[0rem]"
+              class="hero-circle absolute xl:top-[60%] top-[45%] object-cover h-[7rem] xl:right-[0rem] right-[23%]"
             />
-
             <img
               src="/images/hero-image.png"
               alt="hero-logo"
@@ -147,8 +183,10 @@
       <section
         class="py-[3rem] bg-[url('/images/globe-vector.svg')] bg-cover bg-no-repeat"
       >
-        <div class="main_container grid grid-cols-2 scrubEffect">
-          <figure class="flex items-center justify-center relative why-image">
+        <div class="main_container grid lg:grid-cols-2 scrubEffect">
+          <figure
+            class="lg:flex items-center justify-center relative why-image none"
+          >
             <img
               src="/images/square-dot.svg"
               alt="dots"
@@ -157,7 +195,7 @@
             <img
               src="/images/travell.jpg"
               alt="image"
-              class="h-[400px] rounded-lg relative z-10"
+              class="h-[350px] rounded-lg relative z-10"
             />
           </figure>
           <div>
@@ -218,7 +256,9 @@
             Empowering Your Academic Journey <br />with Our Key Offerings
           </h2>
 
-          <div class="pt-[2rem] grid grid-cols-4 gap-[1.5rem] p-services">
+          <div
+            class="pt-[2rem] grid xl:grid-cols-4 grid-cols-3 gap-[1.5rem] p-services"
+          >
             <div class="rounded-lg bg-[#fff] w-fit">
               <figure>
                 <img
@@ -356,7 +396,7 @@
         <div class="main_container">
           <div class="pl-[8rem]">
             <h6 class="section-heading animated-heading">
-              Helping Students from around the country
+              Helping Individuals from around the country
             </h6>
             <h2 class="section-subheading animated-heading">
               Improving the quality of your future <br />
@@ -364,7 +404,9 @@
             </h2>
           </div>
 
-          <div class="grid grid-cols-[0.7fr,1fr,1.5fr] pt-[2rem] gap-[2rem]">
+          <div
+            class="grid xl:grid-cols-[0.7fr,1fr,1.5fr] grid-cols-[0.8fr,1fr] pt-[2rem] gap-[2rem]"
+          >
             <div class="flex flex-col justify-center">
               <div class="flex font-montserrat">
                 <p
@@ -392,7 +434,7 @@
               />
             </figure>
             <div
-              class="flex flex-col justify-center gap-[1.5rem] goal-description"
+              class="flex flex-col justify-center gap-[1.5rem] goal-description xl:col-span-1 col-span-2"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -447,19 +489,19 @@
       </section>
 
       <!-- students feedback -->
-      <section class="py-[3rem]">
+      <section class="!py-[3rem] main_container">
         <div
-          class="main_container !py-[3rem] !px-[5rem] bg-[#03548a] rounded-xl grid grid-cols-[0.8fr,1.7fr] gap-[2rem] relative overflow-hidden"
+          class="!py-[3rem] xl:!px-[5rem] !px-[2rem] bg-[#03548a] rounded-xl grid grid-cols-[0.8fr,1.7fr] gap-[2rem] relative overflow-hidden"
         >
           <img
             src="/images/hill.svg"
             alt="hills"
-            class="absolute top-[2rem] right-[2rem]"
+            class="absolute top-[2rem] xl:right-[2rem] right-[0.5rem]"
           />
           <img
             src="/images/hill.svg"
             alt="hills"
-            class="absolute bottom-[2rem] left-[2rem]"
+            class="absolute bottom-[2rem] xl:left-[2rem] left-[0.5rem]"
           />
           <!-- <img
             src="/images/curves.svg"
@@ -508,7 +550,7 @@
                   <img
                     src="/images/student1.jpg"
                     alt="student"
-                    class="w-[200px] h-[300px] left-[2.5rem] top-[-2rem] object-cover absolute"
+                    class="xl:w-[200px] xl:h-[300px] w-[150px] h-[250px] xl:left-[2.5rem] left-[1rem] xl:top-[-2rem] top-[-0.3rem] object-cover absolute"
                   />
                   <div></div>
                   <div class="flex flex-col items-end">
@@ -535,7 +577,7 @@
                   <img
                     src="/images/student2.jpg"
                     alt="student"
-                    class="w-[200px] h-[300px] left-[2.5rem] top-[-2rem] object-cover absolute"
+                    class="xl:w-[200px] xl:h-[300px] w-[150px] h-[250px] xl:left-[2.5rem] left-[1rem] xl:top-[-2rem] top-[-0.3rem] object-cover absolute"
                   />
                   <div></div>
                   <div class="flex flex-col items-end">
@@ -562,7 +604,7 @@
                   <img
                     src="/images/student3.jpg"
                     alt="student"
-                    class="w-[200px] h-[300px] left-[2.5rem] top-[-2rem] object-cover absolute"
+                    class="xl:w-[200px] xl:h-[300px] w-[150px] h-[250px] xl:left-[2.5rem] left-[1rem] xl:top-[-2rem] top-[-0.3rem] object-cover absolute"
                   />
                   <div></div>
                   <div class="flex flex-col items-end">
@@ -574,8 +616,7 @@
                     <p class="font-[500] text-[14px] text-end">
                       The experience and knowledge of the counselors at Global
                       Park are top-notch. They provided me with the best
-                      guidance and resources, making my journey to studying
-                      abroad successful.
+                      guidance making my journey to studying abroad successful.
                     </p>
                   </div>
                 </div>
@@ -590,7 +631,7 @@
                   <img
                     src="/images/student1.jpg"
                     alt="student"
-                    class="w-[200px] h-[300px] left-[2.5rem] top-[-2rem] object-cover absolute"
+                    class="xl:w-[200px] xl:h-[300px] w-[150px] h-[250px] xl:left-[2.5rem] left-[1rem] xl:top-[-2rem] top-[-0.3rem] object-cover absolute"
                   />
                   <div></div>
                   <div class="flex flex-col items-end">
@@ -838,13 +879,14 @@
         </div>
       </section>
     </main>
+
     <!-- footer  -->
     <footer
       class="pt-[3rem] pb-[1.5rem] bg-[#03548a] bg-[url('/images/globe.svg')] bg-cover bg-no-repeat"
     >
       <div class="main_container relative">
         <div
-          class="w-[80%] py-[2rem] overflow-hidden bg-[#beedf5] flex justify-center gap-[2rem] items-center absolute top-[-6rem] left-[7.5rem] rounded-lg"
+          class="xl:w-[80%] py-[2rem] overflow-hidden bg-[#beedf5] lg:flex lg:justify-center lg:gap-[2rem] items-center absolute top-[-6rem] xl:left-[7.5rem] rounded-lg left-[3rem] w-[90%] xl:px-0 px-[1rem] grid grid-cols-[1.2fr,1fr] gap-[0.5rem]"
         >
           <img
             src="/images/birds.svg"
@@ -857,33 +899,37 @@
             class="absolute rotate-90 left-[-1.9rem] bottom-[-2rem] w-[5rem]"
           />
 
-          <h2 class="font-bold text-[1.4rem] text-[#03548a]">
+          <h2
+            class="font-bold xl:text-[1.4rem] lg:text-[1.2rem] text-[1.4rem] text-[#03548a] xl:col-span-1 col-span-2 text-center"
+          >
             Admission is open for the next batch
           </h2>
-          <a href="/contact.html">
-            <button class="animated-button">
-              <svg
-                viewBox="0 0 24 24"
-                class="arr-2"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
-              <span class="text">Get Started Now</span>
-              <span class="circle"></span>
-              <svg
-                viewBox="0 0 24 24"
-                class="arr-1"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-              </svg>
-            </button>
-          </a>
+          <div class="flex justify-end pr-[0.7rem]">
+            <a href="/contact.html" class="w-fit">
+              <button class="animated-button">
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+                <span class="text">Get Started Now</span>
+                <span class="circle"></span>
+                <svg
+                  viewBox="0 0 24 24"
+                  class="arr-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                  ></path>
+                </svg>
+              </button>
+            </a>
+          </div>
           <div class="font-semibold text-[#03548a]">
             <a
               href="tel:+977-9851244979"
@@ -907,8 +953,10 @@
             </a>
           </div>
         </div>
-        <div class="pt-[3rem] flex justify-evenly text-[#fff]">
-          <div class="flex flex-col justify-start bg-[]">
+        <div
+          class="lg:pt-[3rem] pt-[5rem] lg:flex xl:justify-evenly lg:justify-between grid grid-cols-2 text-[#fff]"
+        >
+          <div class="flex flex-col justify-start">
             <figure class="w-fit">
               <a href="/">
                 <img
@@ -919,7 +967,7 @@
               </a>
             </figure>
             <figcaption>
-              <p class="w-[350px] text-[14px] pt-[0.8rem]">
+              <p class="xl:w-[350px] w-[220px] text-[14px] pt-[0.8rem]">
                 Discover exceptional educational opportunities at the Global
                 Park Study Center, where academic excellence meets nature's
                 beauty. Join us to achieve your goals and explore the wonders of
@@ -1051,6 +1099,8 @@
         </div>
       </div>
     </footer>
+
+    <!-- javascript  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
       integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
