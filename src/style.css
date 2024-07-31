@@ -53,6 +53,7 @@ body {
     padding: 0 30px;
   }
 }
+
 @media (width<640px) {
   .main_container {
     padding: 0 15px;
@@ -82,6 +83,12 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   font-size: 2.5rem;
+}
+
+@media (width<640px) {
+  .page-heading {
+    font-size: 2rem;
+  }
 }
 
 .button {
