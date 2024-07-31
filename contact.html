@@ -30,7 +30,7 @@
               <img
                 src="/images/global-logo.png"
                 alt="logo"
-                class="h-[50px] object-cover"
+                class="sm:h-[50px] h-[40px] object-cover"
               />
             </a>
           </figure>
@@ -136,7 +136,7 @@
 
     <!-- contact section  -->
     <section class="hero">
-      <div class="main_container !pt-[8rem] !pb-[6rem]">
+      <div class="main_container !pt-[8rem] sm:!pb-[6rem] !pb-[3rem]">
         <div
           class="relative text-center flex items-center flex-col justify-center"
         >
@@ -144,9 +144,9 @@
           <img
             src="/images/spiral.svg"
             alt="svg"
-            class="h-[40px] absolute right-[36%] top-[-5%]"
+            class="h-[40px] absolute xl:right-[36%] lg:right-[32%] right-[25%] top-[-5%] sm:block hidden"
           />
-          <p class="tex-center w-[80%] font-[500]">
+          <p class="text-center sm:w-[80%] font-[500]">
             Reach out to us for personalized support and guidance. We're here to
             help you achieve your academics, career, and life goals.
           </p>
@@ -158,7 +158,9 @@
             Global Park Study centre
           </h2>
 
-          <div class="pt-[2rem] flex gap-[1rem] justify-evenly font-[500]">
+          <div
+            class="pt-[2rem] flex lg:gap-[1rem] gap-[2rem] lg:justify-evenly lg:flex-nowrap flex-wrap justify-center font-[500]"
+          >
             <div
               class="bg-darkblue w-[230px] text-[#fff] p-[1rem] rounded-lg flex flex-col items-center shadow-lg gap-[0.3rem] hover:scale-105 transition-all duration-150 ease-in-out hover:shadow-2xl"
             >
@@ -226,6 +228,7 @@
               </svg>
               <p class="font-bold text-[1.2rem]">Email:</p>
               <p>info@globalpark.edu.np</p>
+              <p>&nbsp;</p>
             </div>
             <div
               class="bg-[#fff] text-darkblue w-[230px] p-[1rem] rounded-lg flex flex-col items-center shadow-lg gap-[0.3rem] hover:scale-105 transition-all duration-150 ease-in-out hover:shadow-2xl"
@@ -255,9 +258,9 @@
             </div>
           </div>
         </div>
-        <div class="pt-[4rem] px-[3rem]">
+        <div class="pt-[4rem] xl:px-[3rem] lg:px-[2rem] px-[0.5rem]">
           <div
-            class="grid grid-cols-2 w-full rounded-lg overflow-hidden gap-[1.5rem] bg-[#fffefe] shadow-xl"
+            class="grid sm:grid-cols-2 grid-cols-1 w-full rounded-lg overflow-hidden lg:gap-[1.5rem] bg-[#fffefe] shadow-xl"
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.0743932186734!2d85.31649352058194!3d27.70809714886857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19621f5d35c9%3A0x91872a3c214b6920!2sGlobal%20Park%20Study%20Centre!5e0!3m2!1sen!2snp!4v1721977515410!5m2!1sen!2snp"
@@ -265,7 +268,7 @@
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              class="w-full h-full rounded-tl-lg rounded-bl-lg focus:!outline-none"
+              class="w-full sm:h-full rounded-tl-lg sm:rounded-bl-lg rounded-tr-lg focus:!outline-none h-[350px]"
             ></iframe>
 
             <form
@@ -328,11 +331,11 @@
 
     <!-- footer  -->
     <footer
-      class="pt-[3rem] sm:pb-[1.5rem] pb-[0.5rem] bg-[#03548a] bg-[url('/images/globe.svg')] bg-cover bg-no-repeat"
+      class="pt-[3rem] sm:pb-[1.5rem] pb-[0.8rem] bg-[#03548a] bg-[url('/images/globe.svg')] bg-cover bg-no-repeat"
     >
       <div class="main_container relative">
         <div
-          class="xl:w-[80%] py-[2rem] overflow-hidden bg-[#beedf5] lg:flex lg:justify-center lg:gap-[2rem] items-center sm:absolute sm:top-[-6rem] xl:left-[7.5rem] rounded-lg sm:left-[3rem] sm:w-[90%] w-[100%] xl:px-0 px-[1rem] grid sm:grid-cols-[1.2fr,1fr] grid-cols-1 gap-[0.5rem] relative"
+          class="xl:w-[80%] py-[2rem] overflow-hidden bg-[#beedf5] lg:flex lg:justify-center lg:gap-[2rem] items-center sm:absolute sm:top-[-6rem] xl:left-[7.5rem] rounded-lg sm:left-[2.2rem] sm:w-[90%] w-[100%] xl:px-0 px-[1rem] grid sm:grid-cols-[1.2fr,1fr] grid-cols-1 gap-[0.5rem] relative"
         >
           <img
             src="/images/birds.svg"

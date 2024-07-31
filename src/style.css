@@ -85,12 +85,6 @@ body {
   font-size: 2.5rem;
 }
 
-@media (width<640px) {
-  .page-heading {
-    font-size: 2rem;
-  }
-}
-
 .button {
   @apply border-[2px] border-primary flex items-center text-primary gap-2 rounded-full w-fit px-4 py-2 font-semibold relative overflow-hidden transition-all duration-200 ease-in-out;
 }
@@ -150,6 +144,16 @@ body {
   color: #03548a;
   font-size: 2rem;
   text-transform: capitalize;
+}
+
+@media (width<640px) {
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  .section-subheading {
+    font-size: 1.7rem;
+  }
 }
 
 .swiper {
