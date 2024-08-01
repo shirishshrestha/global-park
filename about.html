@@ -2,10 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Global Park Study Centre – Education Consultancy</title>
-    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <!-- header section  -->
@@ -29,7 +30,7 @@
           <figure class="header-figure">
             <a href="/">
               <img
-                src="/images/global-logo.png"
+                src="./images/global-logo.png"
                 alt="logo"
                 class="sm:h-[50px] h-[40px] object-cover"
               />
@@ -40,18 +41,18 @@
               <li class="header-menu text-hover">
                 <a href="/">Home</a>
               </li>
-              <li class="header-menu font-bold text-primary">
-                <a href="/about.html">About Us</a>
+              <li class="header-menu font-bold text-[#223EF8]">
+                <a href="./about.html">About Us</a>
               </li>
               <li class="header-menu text-hover">
-                <a href="/destination.html">Top Destinations</a>
+                <a href="./destination.html">Top Destinations</a>
               </li>
 
               <li class="header-menu text-hover">
-                <a href="/services.html">Services</a>
+                <a href="./services.html">Services</a>
               </li>
               <li class="header-menu text-hover">
-                <a href="/contact.html">Contact</a>
+                <a href="./contact.html">Contact</a>
               </li>
             </ul>
           </nav>
@@ -86,16 +87,16 @@
                 <a href="/">Home</a>
               </li>
               <li class="resp-list">
-                <a href="/about.html">About Us</a>
+                <a href="./about.html">About Us</a>
               </li>
               <li class="resp-list">
-                <a href="/destination.html">Top Destinations</a>
+                <a href="./destination.html">Top Destinations</a>
               </li>
               <li class="resp-list">
-                <a href="/services.html">Services</a>
+                <a href="./services.html">Services</a>
               </li>
               <li class="resp-list">
-                <a href="/contact.html">Contact</a>
+                <a href="./contact.html">Contact</a>
               </li>
               <li class="text-[16px]">
                 <a
@@ -144,7 +145,7 @@
           >
             <h1 class="page-heading">About us</h1>
             <img
-              src="/images/spiral.svg"
+              src="./images/spiral.svg"
               alt="svg"
               class="h-[40px] absolute xl:right-[38%] lg:right-[34%] sm:right-[32%] right-[12%] sm:block hidden top-[-5%]"
             />
@@ -165,7 +166,7 @@
               </div>
               <figure class="pr-[2rem]">
                 <img
-                  src="/images/ear.svg"
+                  src="./images/ear.svg"
                   alt="image"
                   class="sm:block hidden lg:pl-0 pl-[1rem]"
                 />
@@ -236,7 +237,7 @@
             </div>
             <figure class="flex justify-center items-center">
               <img
-                src="/images/vision.jpg"
+                src="./images/vision.jpg"
                 alt="vision"
                 class="h-[300px] w-full object-cover"
               />
@@ -257,7 +258,7 @@
               class="flex justify-center items-center max-[640px]:order-last"
             >
               <img
-                src="/images/approach.jpg"
+                src="./images/approach.jpg"
                 alt="vision"
                 class="h-[300px] w-full object-cover"
               />
@@ -305,7 +306,7 @@
             <div
               class="bg-[#fff] sm:w-fit w-full rounded-lg shadow-sm flex flex-col items-center"
             >
-              <img src="/images/browse.svg" alt="browse" class="h-[230px]" />
+              <img src="./images/browse.svg" alt="browse" class="h-[230px]" />
               <div class="pb-[0.6rem] px-[1rem] text-center w-full">
                 <p class="font-semibold">Browse courses or desired jobs</p>
                 <p class="font-[500] sm:w-[250px] w-full text-[14px]">
@@ -318,7 +319,7 @@
               class="bg-[#fff] sm:w-fit w-full rounded-lg shadow-sm flex flex-col items-center"
             >
               <img
-                src="/images/getintouch.svg"
+                src="./images/getintouch.svg"
                 alt="get in touch"
                 class="h-[230px]"
               />
@@ -332,7 +333,7 @@
             <div
               class="bg-[#fff] sm:w-fit w-full rounded-lg shadow-sm flex flex-col items-center"
             >
-              <img src="/images/apply.svg" alt="browse" class="h-[230px]" />
+              <img src="./images/apply.svg" alt="browse" class="h-[230px]" />
               <div class="pb-[0.6rem] px-[1rem] text-center w-full">
                 <p class="font-semibold">Apply and receive offers</p>
                 <p class="font-[500] sm:w-[250px] w-full text-[14px]">
@@ -347,19 +348,19 @@
 
     <!-- footer  -->
     <footer
-      class="pt-[3rem] sm:pb-[1.5rem] pb-[0.8rem] bg-[#03548a] bg-[url('/images/globe.svg')] bg-cover bg-no-repeat"
+      class="pt-[3rem] sm:pb-[1.5rem] pb-[0.8rem] bg-[#03548a] bg-[url('./images/globe.svg')] bg-cover bg-no-repeat"
     >
       <div class="main_container relative">
         <div
           class="xl:w-[80%] py-[2rem] overflow-hidden bg-[#beedf5] lg:flex lg:justify-center lg:gap-[2rem] items-center sm:absolute sm:top-[-6rem] xl:left-[7.5rem] rounded-lg sm:left-[2.2rem] sm:w-[90%] w-[100%] xl:px-0 px-[1rem] grid sm:grid-cols-[1.2fr,1fr] grid-cols-1 gap-[0.5rem] relative"
         >
           <img
-            src="/images/birds.svg"
+            src="./images/birds.svg"
             alt="dots"
             class="absolute right-[-3.5rem] top-[-2rem]"
           />
           <img
-            src="/images/sketch.svg"
+            src="./images/sketch.svg"
             alt="ear"
             class="absolute rotate-90 left-[-1.9rem] bottom-[-2rem] w-[5rem]"
           />
@@ -370,7 +371,7 @@
             Admission is open for the next batch
           </h2>
           <div class="flex sm:justify-end justify-center pr-[0.7rem]">
-            <a href="/contact.html" class="w-fit">
+            <a href="./contact.html" class="w-fit">
               <button class="animated-button">
                 <svg
                   viewBox="0 0 24 24"
@@ -427,7 +428,7 @@
             <figure class="w-fit">
               <a href="/">
                 <img
-                  src="/images/global.png"
+                  src="./images/global.png"
                   alt="logo"
                   class="h-[60px] object-cover"
                 />
@@ -499,24 +500,24 @@
             <ul class="flex flex-col gap-[0.5rem] footer-ul">
               <li class="font-bold text-[1.2rem] pb-[0.6rem]">USEFUL LINKS</li>
               <li><a href="/">Home</a></li>
-              <li><a href="/about.html">About </a></li>
-              <li><a href="/destination.html">Destination</a></li>
-              <li><a href="/services.html">Services</a></li>
-              <li><a href="/contact.html">Contact</a></li>
+              <li><a href="./about.html">About </a></li>
+              <li><a href="./destination.html">Destination</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
           <div class="font-[500]">
             <ul class="flex flex-col gap-[0.5rem] footer-ul">
               <li class="font-bold text-[1.2rem] pb-[0.6rem]">Our Services</li>
-              <li><a href="/services.html">Career Counselling </a></li>
+              <li><a href="./services.html">Career Counselling </a></li>
               <li>
-                <a href="/services.html">Visa & Documentation Guidance</a>
+                <a href="./services.html">Visa & Documentation Guidance</a>
               </li>
               <li>
-                <a href="/services.html">Visa interview preparation </a>
+                <a href="./services.html">Visa interview preparation </a>
               </li>
-              <li><a href="/services.html">Test preparation Courses</a></li>
-              <li><a href="/services.html">Public Speaking Courses</a></li>
+              <li><a href="./services.html">Test preparation Courses</a></li>
+              <li><a href="./services.html">Public Speaking Courses</a></li>
             </ul>
           </div>
           <div class="font-[500]">
@@ -581,7 +582,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./src/heroSection.js"></script>
+    <script src="./src/heroSection.js" type="module"></script>
     <script type="module" src="./src/about.js"></script>
     <script>
       const footerSpan = document.querySelector(".footer-span");
